@@ -43,7 +43,7 @@ class OrdersController extends Controller
 
     public function order()
     {
-        $orders = Order::orderByDesc('id')->get();
+        $orders = Order::orderByDesc('id')->where('pickup_status', 'no')->get();
         return view('dashboard', compact('orders'));
     }
 
@@ -86,5 +86,15 @@ class OrdersController extends Controller
         } catch (\Exception $e) {
             return \redirect()->back()->with('errors', 'Your orderID is invalid');
         }
+    }
+
+
+
+    public function confirmedPickup(Request $request)
+    {
+        $confirmed = Order::where('pickup_status', 'yes')->latest()->get();
+        $unpaid = Order::where('payment_status', 'no')->latest()->get();
+        $total = Order::all();
+        return view('confirmedPickups', compact('confirmed', 'total', 'unpaid'));
     }
 }
