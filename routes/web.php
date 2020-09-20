@@ -24,3 +24,4 @@ Route::post('/submit_order', 'Orders\OrdersController@placeOrder');
 Route::get('/check_order', 'Orders\OrdersController@orderCheck');
 Route::post('/get_id', 'Orders\OrdersController@getOrderId');
 Route::post('/confirm_pickup', 'Orders\OrdersController@confirmPickup');
+Route::get('/pickup_confirmed', 'Orders\OrdersController@confirmedPickup');
