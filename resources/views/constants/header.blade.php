@@ -20,7 +20,7 @@
     body,
     header,
     .view {
-      height: 100%;
+      height: 104%;
     }
 
     @media (max-width: 740px) {
@@ -28,7 +28,7 @@
       body,
       header,
       .view {
-        height: 170vh;
+        height: 200vh;
       }
     }
 
@@ -56,6 +56,16 @@
     .image img:hover {
         transform: scale(0.99);
     }     
+    .page-footer ul li {
+      list-style-type: none;
+      text-align: left !important;
+    }
+    .page-footer ul li a {
+      color: #F1F1CA;
+    }
+    .page-footer ul li a:hover {
+      color: gold;
+    }
   </style>
 </head>
 
@@ -110,8 +120,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="/check_order" class="nav-link border border-light rounded"
-              target="_blank">
+            <a href="/check_order" class="nav-link border border-light rounded">
               <i class="fab fa-githu b mr-2"></i>Confirm Order
             </a>
           </li>
@@ -126,52 +135,55 @@
 
   <footer class="page-footer text-center font-small mt-4 wow fadeIn">
 
-<!--Call to action-->
-<div class="pt-4">
-  <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank" role="button">Download MDB
-    <i class="fas fa-download ml-2"></i>
-  </a>
-  <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">Start free tutorial
-    <i class="fas fa-graduation-cap ml-2"></i>
-  </a>
-</div>
-<!--/.Call to action-->
 
-<hr class="my-4">
+
+<hr class="my-4 text-warning">
 
 <!-- Social icons -->
-<div class="pb-4">
-  <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-    <i class="fab fa-facebook-f mr-3"></i>
-  </a>
+<div class="container">
+  <div class="row pb-4">
+    <div class="col-md-3 offset-md-1">
+      <h2><u>Our <b class="text-warning">Address</b> </u></h2>
+      <ul>
+        <li>P.o box Dar es Salaam</li>
+        <li>Lumumba st</li>
+        <li>Phone: 123456789</li>
+        <li>Email: sample@example.com</li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <h2><u>Useful <b class="text-warning">links</b> </u></h2>
+      <ul>
+        <li><a href="#!">Link to somewhere</a></li>
+        <li><a href="#!">Our blog</a></li>
+        <li><a href="#!">see the portfolio</a></li>
+        <li><a href="#!">service assurance</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <h2><u>Social <b class="text-warning">media</b> </u></h2>
+      <a href="#!">
+        <i class="fab fa-facebook-f mr-3"></i>
+      </a>
 
-  <a href="https://twitter.com/MDBootstrap" target="_blank">
-    <i class="fab fa-twitter mr-3"></i>
-  </a>
+      <a href="#!">
+        <i class="fab fa-twitter mr-3"></i>
+      </a>
 
-  <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-    <i class="fab fa-youtube mr-3"></i>
-  </a>
+      <a href="#!">
+        <i class="fab fa-youtube mr-3"></i>
+      </a>
 
-  <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-    <i class="fab fa-google-plus-g mr-3"></i>
-  </a>
+      <a href="#!">
+        <i class="fab fa-google-plus-g mr-3"></i>
+      </a>
 
-  <a href="https://dribbble.com/mdbootstrap" target="_blank">
-    <i class="fab fa-dribbble mr-3"></i>
-  </a>
+      <a href="#!">
+        <i class="fab fa-dribbble mr-3"></i>
+      </a>
 
-  <a href="https://pinterest.com/mdbootstrap" target="_blank">
-    <i class="fab fa-pinterest mr-3"></i>
-  </a>
-
-  <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-    <i class="fab fa-github mr-3"></i>
-  </a>
-
-  <a href="http://codepen.io/mdbootstrap/" target="_blank">
-    <i class="fab fa-codepen mr-3"></i>
-  </a>
+    </div>
+  </div>
 </div>
 <!-- Social icons -->
 
