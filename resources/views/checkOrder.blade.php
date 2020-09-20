@@ -1,5 +1,14 @@
 @extends('constants\header')
-
+<style>
+     @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .view {
+        height: 47vh !important;
+      }
+    }
+</style>
 <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
     <!--Indicators-->
@@ -73,7 +82,7 @@
       <!--Section: Main features & Quick Start-->
       <section>
 
-        <h3 class="h3 text-center mb-5 mt-3">About MDB</h3>
+        <h3 class="h3 text-center mb-5 mt-3">Confirm pickup</h3>
 
         <!--Grid row-->
         <div class="row wow fadeIn">

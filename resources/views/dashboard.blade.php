@@ -50,7 +50,7 @@
                             </div>
                             <div class="form-group col-md-6">
                                 <!-- <label for="inputPhone4">Phone</label> -->
-                                <input type="tel" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ old('phone') }}" id="inputPhone4" placeholder="Phone*" required>
+                                <input type="tel" name="phone" class="form-control @error('phone') is-invalid @enderror" value="{{ old('phone') }}" id="inputPhone4" placeholder="Phone*. ex. 255123456789" required>
         
                                 <span class="text-danger" id="phoneError"></span>
                             </div>
@@ -68,12 +68,12 @@
                             </div>
                             <div class="form-group col-md-3">
                                 <label for="inputClothCount">No.of clothes*</label>
-                                <input type="text" name="cloth_count" class="form-control @error('cloth_count') is-invalid @enderror" value="{{ old('cloth_count') }}" id="inputClothCount" placeholder="3" required>
+                                <input type="text" name="cloth_count" class="form-control @error('cloth_count') is-invalid @enderror" value="{{ old('cloth_count') }}" id="inputClothCount" placeholder="ex. 3" required>
                                 <span class="text-danger" id="cloth_count"></span>
                             </div>
                             <div class="form-group col-md-3">
                                 <label for="house">House no.</label>
-                                <input type="text" name="house" class="form-control @error('house') is-invalid @enderror" value="{{ old('house') }}" id="house" placeholder="15">
+                                <input type="text" name="house" class="form-control @error('house') is-invalid @enderror" value="{{ old('house') }}" id="house" placeholder="ex. 15">
                                 <span class="text-danger" id="house"></span>
                             </div>
                         </div>
